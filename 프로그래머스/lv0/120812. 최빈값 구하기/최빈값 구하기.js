@@ -5,7 +5,7 @@ function solution(array) {
         if (!answer[array[i]]) answer[array[i]] = 1;
         else answer[array[i]]++;
     }
-    let maxTime = answer[Object.keys(answer)[0]];
+    let maxTime = Object.values(answer)[0];
     let maxNum = Object.keys(answer)[0];
     
     for (let num in answer) {
